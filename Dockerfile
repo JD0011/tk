@@ -1,7 +1,7 @@
-FROM quay.io/souravkl11/raganork:multidevice
+FROM quay.io/JD0011/tk:multidevice
 
-RUN git clone https://github.com/souravkl11/raganork-md /skl/Raganork
-WORKDIR /skl/Raganork
+RUN git clone https://github.com/JD0011/tk /tk/Albin
+WORKDIR /tk/Albin
 ENV TZ=Asia/Kolkata
 RUN yarn install --ignore-engines
 CMD ["node", "index.js"]
